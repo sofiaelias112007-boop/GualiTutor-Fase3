@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GualiTutor - Lecciones"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerLecciones"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/btn_dropdown" />
+
+    <ImageView
+        android:id="@+id/imgLeccion"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="Imagen de la lección"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/txtContenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona una lección para ver su contenido..."
+            android:textSize="16sp"
+            android:textColor="#444444" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnCompletar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Completada"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#4CAF50" />
+
+        <Button
+            android:id="@+id/btnPendiente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pendiente"
+            android:backgroundTint="#FF9800" />
+    </LinearLayout>
+
+</LinearLayout>
